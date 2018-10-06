@@ -3,15 +3,31 @@
 <head>
 		<title>Psychic Guessing Game</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="/assets/style.css">
-	<script src="/assets/javascript/game.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+	<script src="assets/javascript/game.js"></script>
 	
 </head>
-
+	
 <body>
+		<div id="scoreBoard">
+			<h1>Psychic Game</h1>
+			<h3>Wins:
+				<p id="wins"></p>
+			</h3>
+			<h3>Losses:
+				<p id="losses"></p>
+			</h3>
+			<h3>Guesses left:
+				<p id="guessLeft"></p>
+			</h3>
+			<p>Guess which letter I chose:</p>
+			<p id="guessed"></p>
+		</div>
 
-<!--ESTABLISH variables for user and computer-->
+	</body>
+
+	<!--ESTABLISH variables for user and computer-->
 
 <!--TRACK the letters selected (keypress)-->
 
@@ -32,21 +48,5 @@
 	<!--Here is where the code for wins goes-->
 	<!--Here is where the code for losses goes-->
 
-	<div id="psychicAct">
-		<h1>What letter am I thinking of?</h1>
-		<h3>Wins:
-		  <p id="wins"></p>
-		</h3>
-		<h3>Losses:
-		  <p id="losses"></p>
-		</h3>
-		<h3>Guesses left:
-		  <p id="guessLeft"></p>
-		</h3>
-		<p>The letters you've guessed:</p>
-		<p id="guessed"></p>
-	  </div>
-
-</body>
-
 </html>
+
