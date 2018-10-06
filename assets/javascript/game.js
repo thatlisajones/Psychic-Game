@@ -4,18 +4,18 @@
 
 var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var wins = 0;
-var loses = 0;
+var losses = 0;
 var guessesLeft, guessedLetters, letterToGuess;
-
-// Create random way for computer to choose letter
-
-letterToGuess = letters[Math.floor(Math.random() * letters.length)];
-  console.log("Letter to guess: " + letterToGuess);
 
 resetGame();
 display();
 
-//Create loop for showing guesses, wins, losses
+// Tell computer to randomly choose a letter
+
+letterToGuess = letters[Math.floor(Math.random() * letters.length)];
+  console.log("Letter to guess: " + letterToGuess);
+
+//Create if statements for keypress and logging guesses, wins, losses
 
 document.onkeyup = function(event) {
   var guess = event.key;
@@ -32,11 +32,11 @@ document.onkeyup = function(event) {
 
 function display() {
   var winsP = document.getElementById("wins");
-  var losesP = document.getElementById("loses");
+  var lossesP = document.getElementById("losses");
   var guessLeft = document.getElementById("guessLeft");
   var letterGuessed = document.getElementById("guessed");
   winsP.innerHTML = wins;
-  losesP.innerHTML = loses;
+  lossesP.innerHTML = loses;
   guessLeft.innerHTML = guessesLeft;
   letterGuessed.innerHTML = guessedLetters.join(',');
 }
@@ -57,8 +57,13 @@ function fail(letter) {
 }
 
 function resetGame() {
-  guessesLeft = 12;
+  guessesLeft = 8;
   guessedLetters = [];
   letterToGuess = letters[Math.floor(Math.random() * letters.length)];
   console.log("Letter to guess: " + letterToGuess);
 }
+
+// Create way for computer to randomly choose a letter
+
+letterToGuess = letters[Math.floor(Math.random() * letters.length)];
+  console.log("Letter to guess: " + letterToGuess);
