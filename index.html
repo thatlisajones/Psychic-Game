@@ -1,52 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
 <head>
-		<title>Psychic Guessing Game</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/style.css">
-	<script src="assets/javascript/game.js"></script>
-	
+    <meta charset="UTF-8">
+    
+    <script type="text/javascript"
+         src="assets/javascript/game.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
 </head>
-	
+
 <body>
-		<div id="scoreBoard">
-			<h1>Psychic Game</h1>
-			<h3>Wins:
-				<p id="wins"></p>
-			</h3>
-			<h3>Losses:
-				<p id="losses"></p>
-			</h3>
-			<h3>Guesses left:
-				<p id="guessLeft"></p>
-			</h3>
-			<p>Guess which letter I chose:</p>
-			<p id="guessed"></p>
-		</div>
 
-	</body>
+        <div class="jumbotron">
+                <h1 class="display-4">Are you psychic?</h1>
+                <p class="lead">I'm visualizing a letter. Tune into my vibe. Concentrate. Type the letter on your keyboard. You get 10 guesses, so your odds of winning are good. I'm already half convinced that you're a major mindreader.</p>
+                <hr class="my-4">
+                <p>What am I thinking?</p>
+                <p class="lead">
+                  <img src="/assets/images/blankface.png" alt="Concentrate!" width="200" height="200">
+                </p>
+              </div>
 
-	<!--ESTABLISH variables for user and computer-->
+    
+<!--SCOREBOARD-->
 
-<!--TRACK the letters selected (keypress)-->
+        <div>Wins: <span id="wins">0</span></div>
 
-<!--CREATE method for the computer to select a random letter-->
+        <div>Losses: <span id="losses">0</span></div>
 
-<!--TRACK user guesses-->
-	<!--TRACK correct-->
-	<!--TRACK incorrect-->
+        <div>Guesses remaining: <span id="guesses">10</span></div>
 
-<!--CREATE counter-->
-	<!--INCREMENT total guesses, have a limit of total guesses-->
-		<!--RESEARCH using a "for loop" here ??-->
+        <div>Letters guessed: <span id="lettersGuessed"></span></div>
 
-<!--CREATE scoreboard-->
-	<!--Here is where the scoreboard display code will go-->
+</body>
 
-<!--RESET code-->
-	<!--Here is where the code for wins goes-->
-	<!--Here is where the code for losses goes-->
 
 </html>
-
