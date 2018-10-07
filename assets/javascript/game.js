@@ -35,9 +35,9 @@ document.onkeypress = function(event) {
         }
 // Show wins, losses, guesses, and letters on scoreboard.
 
-document.getElementById("wins").textContent = "Wins: " + wins;
-document.getElementById("losses").textContent = "Losses: " + losses;
-document.getElementById("guesses").textContent = "Guesses: " + guesses;
-document.getElementById("lettersGuessed").textContent = "Letters guessed: " + lettersGuessed.join(',');
+document.getElementById("wins").textContent = + wins;
+document.getElementById("losses").textContent =  + losses;
+document.getElementById("guesses").textContent =  + guesses;
+document.getElementById("lettersGuessed").textContent = " " + lettersGuessed.join(' , ');
 
 };
